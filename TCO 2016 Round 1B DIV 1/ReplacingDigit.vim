@@ -87,8 +87,11 @@ class ReplacingDigit(object):
             else:
                 for k in xrange(D[a]):
                     queue.append(a+1)
-
+                    
+        #put all the digit into a queue
         queue.sort()
+        
+        #dic manage all the digit according to their position
         for a in xrange(len(A)):
             t = A[a]
             cnt = 0
